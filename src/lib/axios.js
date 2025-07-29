@@ -3,7 +3,7 @@ import axios from "axios";
 export const axiosInstance = axios.create({
   baseURL:
     import.meta.env.MODE === "development"
-      ? "http://localhost:5001/api/user"
-      : "/api",
+      ? "https://pointify-hki2.onrender.com/api/user"
+      : "/api/user",
   withCredentials: true,
 });
